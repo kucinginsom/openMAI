@@ -15,13 +15,13 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get('/', async (req, res) => {
+app.get('/be', async (req, res) => {
     res.status(200).send({
         message: 'Meow World',
     })
 });
 
-app.post('/', async (req, res) => {
+app.post('/be', async (req, res) => {
     try{
         const prompt = req.body.prompt;
 
