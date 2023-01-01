@@ -72,7 +72,7 @@ const handleSubmit = async (e) => {
     loader(messageDiv);
 
     //Fetch data from bot server openai
-    const response = await fetch('http://localhost:5000', {
+    const response = await fetch('https://courageous-pig-wear.cyclic.app/be', {
         method: 'POST',
         headers: {
             'Content-Type' : 'application/json',
